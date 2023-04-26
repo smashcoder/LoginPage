@@ -1,2 +1,0 @@
-- name: Install Angular CLI
-  run: npm install -g @angular/cli@latest
