@@ -1,0 +1,19 @@
+<h1 class="title" (click)="showAlert()">Create An Account</h1>
+<div class = "md">
+    <div class="md-sd-1">
+        <form>
+            <input type="text" id="name" placeholder="Name" (input)="onNameInput($event)" required>
+            <input type="text" id="mn" placeholder="Mobile Number" (input)="onMnInput($event)">
+            <input type="text" id="eid" placeholder="Email-ID" (input)="onEmailInput($event)" required>
+            <input type="password" id="pass" placeholder="Password" (input)="onPassInput($event)" required>
+            <input type="password" id="cpass" placeholder="Confirm Password" (input)="onCPassInput($event)" required>
+            <div class="md-sd-1-1">
+                <ul class="perm">
+                    <li><input type="checkbox" name="item1" value="License and Agreement" required> * License and Agreement Policy</li>
+                    <li><input type="checkbox" name="item2" value="Terms and Condition" required> * Terms and Conditions</li>
+                </ul>
+            </div>
+            <button class="lg-bt" (click)="register()">Sign Up</button>
+        </form>
+    </div>
+</div>

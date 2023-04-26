@@ -1,0 +1,14 @@
+<h1 class="title" (click)="showAlert()">Login Page</h1>
+<div class="md">
+  <div class="md-sd-1">
+    <form>
+      <input type="text" id="username" placeholder="Username" [(ngModel)]="email" (input)="onEmailInput($event)">
+      <input type="password" id="passkey" placeholder="Password" [(ngModel)]="password" (input)="onPasswordInput($event)">
+      <div class="md-sd-1-1">
+        <button class="bt-1" routerLink="/create-account">Create An Account</button>
+        <button class="bt-2">Forgot Password ?</button>
+      </div>
+      <button class="lg-bt" (click)="login()">Login</button>
+    </form>
+  </div>
+</div>

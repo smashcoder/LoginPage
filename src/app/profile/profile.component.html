@@ -1,0 +1,16 @@
+<h1 class="title" (click)="showAlert()">Profiles</h1>
+<div class="sub-head">
+    <h2>Users Registered</h2>
+    <button (click)="logout()" class="lgot">Logout</button>
+</div>
+<div class="card-container">
+    <div *ngFor="let entry of entries" class="card">
+        <div class="image-container">
+            <img src="{{ entry.image }}">
+        </div>
+        <div class="details-container">
+            <h2>{{ entry.name }}</h2>
+            <p>{{ entry.email }}</p>
+        </div>
+    </div>
+</div>
