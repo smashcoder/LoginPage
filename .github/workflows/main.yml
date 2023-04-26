@@ -9,8 +9,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Version
-        run: ng version
       - name: Install Node.js dependencies
         run: npm install
       - name: Install Angular CLI
