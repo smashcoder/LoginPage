@@ -16,7 +16,7 @@ jobs:
       - name: Config
         run: ng config -g cli.warnings.versionMismatch false
       - name: Build Angular project
-        run: ng build --prod --base-href=/your-repo-name/
+        run: ng build --prod --base-href=/LoginPage/
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
