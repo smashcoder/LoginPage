@@ -12,7 +12,9 @@ jobs:
       - name: Install Node.js dependencies
         run: npm install
       - name: Install Angular CLI
-        run: npm install -g @angular/cli@latest
+        run: npm install -g @angular/cli@15.2.4
+      - name: Config
+        run: ng config -g cli.warnings.versionMismatch false
       - name: Build Angular project
         run: ng build --prod --base-href=/your-repo-name/
       - name: Deploy to GitHub Pages
